@@ -15,14 +15,30 @@ body
     height:100%;
     width:100%;
 }
+
+#arrow
+{
+    height:40x;
+    width:40px;
+    position:absolute;
+    right:0px;
+    top:88vh;
+    margin:5px;
+    border-radius: 50%;
+    position:fixed;
+}
+
+#arrow:hover{
+    border:2px solid gold;
+}
 #one
 {   
-    background-color:gold;
+    
     width:100%;
     height:100%;
 }
 #two{
-    border:2px solid black;
+  
     text-align:center;
     display:flex;
 }
@@ -33,7 +49,7 @@ body
     background-color:teal;
 }
 #five{
-    background-color:blueviolet;
+    
 }
 
 
@@ -70,56 +86,87 @@ body
 {
     height:90vh;
     width:100%;
+    background:url("./images/bg.jpg");
+    background-size: contain;
+    
+    background-repeat:no-repeat;
 }
-#bg
-{   
-    border:1px solid red;
-    height:100%;
-    width:50%;
-}
+
 #logobox
 {
-     
     display: inline-block;
     text-align: center;
     position:absolute;
-    top:25vh;
+    top:35vh;
     right:15vw;
-
-}
-#logo
-{
-   border-radius:50%;
-   height:200px;
-   width:200px;
-}
-
-#brand
-{
-    font-size: 80px;
-}
-#tag
-{
-    font-size: 20px;
-    font-style:italic;
-}
-.content{
-
     
 }
+#bglogo{
+    height: 300px;
+    width:300px;
+}
+
+.header{
+    text-align: center;
+    font-size: 50px;
+    font-weight:500px;
+    margin:50px;
+    width:100%;
+    height:12vh;
+    border:2px solid gold;
+    color:rgb(36, 32, 32);
+}
+
+.content{
+
+    display:flex;
+    position:absolute;
+    top:130vh;
+    height:60vh;
+    text-align: center;
+}
+
 #blogo
 {
-    border-radius: 50%;
-    height: 250px;
-    width:250px;
-    margin:auto;
+   border-radius:50%;
+   height:300px;
+   width:300px;
+  left:250px; 
+  position:absolute;
 }
 
 #bcontent
 {
-    border:1px solid black;
+    
     height:25%;
-    width:50%;
-    margin:auto;
-   
+    width:35%;
+    left:650px;
+    top:80px;  
+    
+    position:absolute;
 }
+
+
+/*FIVE */
+
+#footer{
+    height:25%;
+    width:100%;
+    position:relative;
+    top:100vh;
+    background-color: rgb(49, 47, 47);
+    display:flex;
+    overflow: hidden;
+}
+
+.ycircle{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    position:relative;
+    top:-50px;
+    border:25px solid gold;
+    margin: 0px 150px;
+    background-color:white ;
+}
+
