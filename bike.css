@@ -1,256 +1,237 @@
 html {
-    box-sizing: border-box;
-    font-family: 'Roboto Slab', serif;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
-    max-width: 1440px;
-    margin: 0px auto
+  max-width: 1440px;
+  margin: 0px auto;
 }
 
 #arrow {
-    height: 40x;
-    width: 40px;
-    position: absolute;
-    right: 0px;
-    top: 88vh;
-    margin: 5px;
-    border-radius: 50%;
-    position: fixed;
+  height: 40x;
+  width: 40px;
+  position: absolute;
+  right: 0px;
+  top: 88vh;
+  margin: 5px;
+  border-radius: 50%;
+  position: fixed;
 }
 
 #arrow:hover {
-    border: 2px solid gold;
-}
-
-#two {
-
-    text-align: center;
-    display: flex;
+  border: 2px solid gold;
 }
 
 #three {
-    background-color: white;
+  background-color: white;
 }
-#three{
-   
-    height:120vh;
-    width:100vw;
+#three {
+  height: 120vh;
+  width: 100vw;
 }
-#four{
-    background-color:teal;
+#four {
+  background-color: teal;
 }
-#five{
-    
+#five {
 }
-
 
 /* ONE  */
 
-
 #onebg {
-    height: 350px;
-    width: 100%;
-    background: url("./images/bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    background-position: center right;
-    align-items: center;
-    justify-content: flex-end;
+  height: 350px;
+  width: 100%;
+  background: url("./images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center right;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #logobox {
-    height: 100px;
-    width: 100px;
-    overflow: hidden;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
 }
 
 #logobox img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
-
 .header {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 500px;
-    margin: 50px;
-    width: 100%;
-    height: 12vh;
-    border: 2px solid gold;
-    color: rgb(36, 32, 32);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500px;
+  margin: 10px 10px;
+  border: 2px solid gold;
+  color: rgb(36, 32, 32);
 }
 
 .content {
-
-    display: flex;
-    position: absolute;
-    top: 130vh;
-    height: 60vh;
-    text-align: center;
+  font-size: 10px;
+  text-align: center;
 }
 
 #blogo {
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-    left: 250px;
-    position: absolute;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
 }
 
-#bcontent {
-
-    height: 25%;
-    width: 35%;
-    left: 650px;
-    top: 80px;
-
-    position: absolute;
+#blogo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
-
+/*media responsive*/
+@media (min-width: 648px) {
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  #bcontent {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+    
+    #blogo {
+        width: 50%;
+    }
+    #bcontent {
+      width: 50%;
+      margin-right:20px;
+    }
+  }
 /*THREE */
 
-#three .header{
-    border:none;
-   margin-bottom:6px;
+#three .header {
+  border: none;
+  margin-bottom: 6px;
 }
 
-#galleryslider{
-    align-items:center;
-    overflow:hidden;
-   
+#galleryslider {
+  align-items: center;
+  overflow: hidden;
 }
-#slidebox{
-    display:flex;
-    align-items:center;
-        
+#slidebox {
+  display: flex;
+  align-items: center;
 }
-.sliderimg{
-    
-    margin:5px;
-   filter:saturate(5%);
+.sliderimg {
+  margin: 5px;
+  filter: saturate(5%);
 }
 
-a:active :target{
-    filter:none;
+a:active :target {
+  filter: none;
 }
-
-
 
 /*FIVE */
 
 #footer {
-    height: 25%;
-    width: 100%;
-    position: relative;
-    top: 100vh;
-    background-color: rgb(49, 47, 47);
-    display: flex;
-
+  height: 25%;
+  width: 100%;
+  position: relative;
+  top: 100vh;
+  background-color: rgb(49, 47, 47);
+  display: flex;
 }
 
 .ycircle {
-    height: 50px;
-    width: 100px;
-    position: relative;
-    border: 25px solid gold;
-    margin: 0px 150px;
-    background-color: white;
-    border-bottom-left-radius: 200px;
-    border-bottom-right-radius: 200px;
-
+  height: 50px;
+  width: 100px;
+  position: relative;
+  border: 25px solid gold;
+  margin: 0px 150px;
+  background-color: white;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
 }
 
 .icons {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    position: relative;
-    top: -50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: -50px;
 }
-
-
 
 /* navbar */
 
 #navbox {
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(51, 46, 46);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(51, 46, 46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
 }
 
 .nav {
-    display: none;
-    font-size: 16px;
-    margin-right: 20px;
-    text-decoration: none;
-    color: white;
+  display: none;
+  font-size: 16px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
 }
 
 /* nav media queries */
 
-
-
 @media (min-width: 648px) {
+  #navbox {
+    height: 100px;
+  }
 
-    #navbox {
-        height: 100px;
-    }
+  .nav {
+    display: inline-block;
+  }
 
-    .nav {
-        display: inline-block;
-    }
+  #onebg {
+    height: 50vh;
+  }
 
-
-    #onebg {
-        height: 50vh;
-    }
-
-    #logobox {
-        height: 200px;
-        width: 200px;
-    }
+  #logobox {
+    height: 200px;
+    width: 200px;
+  }
 }
 
-
 @media (min-width: 1024px) {
+  #navbox {
+    height: 100px;
+  }
 
-    #navbox {
-        height: 100px;
-    }
+  .nav {
+    display: inline-block;
+  }
 
-    .nav {
-        display: inline-block;
-    }
+  #onebg {
+    height: 100vh;
+  }
 
-
-    #onebg {
-        height: 100vh;
-    }
-
-    #logobox {
-        height: 300px;
-        width: 300px;
-    }
-
+  #logobox {
+    height: 300px;
+    width: 300px;
+  }
 }
