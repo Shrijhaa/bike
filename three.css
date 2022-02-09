@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    text-align:center;
+    
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.slidecontainer{
+    background-color: yellow;
+    height: 100vh;
+    width:100%;
+    border:3px solid blue;
+    
+}
+
+.slider{
+    display:flex;
+    background-color: teal;
+    height: 100%;
+    width:100%;
+    
+}
+
+.slide{
+    border:3px solid red;
+    margin: 0px 25px;
+   background: blue
+ 
+}
+.img{
+    height:500px;
+    width:750px;
+    filter:saturate(10%);
+    transition: 3s;
+}
+
+a:hover .img{
+        height:550px;
+        width:850px;
+}
+
