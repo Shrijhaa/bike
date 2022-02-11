@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.slidebox{
+    overflow:hidden;
+    margin-top:30px;
+    height:80%;
+    width:100%;
+     align-items: center;
+     
+}
+.slidebtn{
+    height:85%;
+    width:15%;
+    border:2px solid red;
+    position:absolute;
+    background:transparent;
+    
+}
+#left{
+    left:0px;
+}
+#right{
+    right:0px;
+}
+.slider{
+    
+    display:flex;
+    position:absolute;
+   
+}
+.img{
+    margin-left:50px;
+    height:550px;
+    width:900px;
+}
