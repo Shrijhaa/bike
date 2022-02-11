@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            slider
-        </title>
-        
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <link rel="stylesheet" href="slide.css">
-    </head>
-    <body>
-        <div class="slidebox">
-        
-       
-        <div class="slider" id="slider">
-          
-                <img class="img" id="img1" src="./images/slide1.jpg">
-                <img class="img" id="img2" src="./images/slide2.jpg">
-                <img class="img" id="img3" src="./images/slide3.jpg">
-                <img class="img" id="img4" src="./images/slide4.jpeg">
-                <img class="img" id="img5" src="./images/slide5.jpg">
-          
-        </div>
-        <button onclick=leftslide() class="slidebtn" id="left"></button>
-        <button onclick=rytslide() class="slidebtn" id="right"></button>
-        
-        </div>
-    </body>
-    <script>
-         let rcount=0,lcount=0;
-        function leftslide(){
-                lcount++;
-                var slide=document.getElementById("slider");
-                var shift = -1*lcount*65;
-                if(lcount<5){
-                slide.style.left = shift+"%";
-                }
-        }
+  <head>
+    <title>slider</title>
 
-        function rytslide(){
-                rcount++;
-                var slide=document.getElementById("slider");
-                var shift = -1*rcount*65;
-                if(rcount<5){
-                slide.style.right = shift+"%";
-                }
-        }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="slide.css" />
+  </head>
+  <body>
+    <div class="slidebox">
+      <div class="slider" id="slider">
+        <img class="img" id="img1" src="./images/slide1.jpg" />
+        <img class="img" id="img2" src="./images/slide2.jpg" />
+        <img class="img" id="img3" src="./images/slide3.jpg" />
+        <img class="img" id="img4" src="./images/slide4.jpeg" />
+        <img class="img" id="img5" src="./images/slide5.jpg" />
+      </div>
+      <button onclick="leftButton()" class="slidebtn" id="left"></button>
+      <button onclick="rightButton()" class="slidebtn" id="right"></button>
+    </div>
+  </body>
+  <script>
+    const slide = document.getElementById("slider");
+    let activeIndex = 0;
+    let totalItemsInSlider = 5;
+    let itemWidth = 100;
+
+    function updateIndex(newIndex) {
+      /**
+       * Todo-1: if newIndex > totalItems reset activeIndex to 0
+       * Todo-2: if newIndex < 0 reset activeIndex to totalItems length
+       * Todo-3: update the translateX by activeIndex * itemWidth
+       */
+      if (newIndex > totalItemsInSlider - 1) {
+        activeIndex = 0;
+      } else if (newIndex < 0) {
+        activeIndex = totalItemsInSlider - 1;
+      } else {
+        activeIndex = newIndex;
+      }
+      slide.style.transform = `translateX(-${activeIndex * itemWidth}%)`;
+    }
+
+    function leftButton() {
+      updateIndex(activeIndex - 1);
+    }
+
+    function rightButton() {
+      updateIndex(activeIndex + 1);
+    }
+  </script>
 </html>
